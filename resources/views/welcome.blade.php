@@ -91,6 +91,31 @@
         .status-err {
             color: #f87171;
         }
+        .video-section {
+            margin-bottom: 24px;
+        }
+        .video-title {
+            font-size: 13px;
+            color: #94a3b8;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            background: #0f172a;
+        }
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
         .footer {
             border-top: 1px solid #334155;
             padding-top: 16px;
@@ -117,7 +142,7 @@
         <h1>Aplikasi Pengelolaan Data</h1>
         <p class="subtitle">
             Website ini dibangun menggunakan Laravel 12, dikelola dengan Git &amp; GitHub,
-            dan siap dipublikasikan ke server hosting cPanel.
+            dan telah dipublikasikan ke server hosting Vercel dengan database PostgreSQL.
         </p>
 
         <div class="grid">
@@ -137,8 +162,21 @@
             </div>
         </div>
 
+        <div class="video-section">
+            <div class="video-title">Arisu Dance</div>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/T9F1Wk8DQdg"
+                    title="Arisu Dance"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
         <div class="footer">
-            <span>Mahasiswa: Arya Nandika Riptohadi J0404251074</span>
+            <span>Mahasiswa: Arya Nandika Riptohadi (J0404251074)</span>
             <span>Prodi: Teknologi Rekayasa Komputer</span>
         </div>
     </div>
