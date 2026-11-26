@@ -1,6 +1,6 @@
 @php
     $dbConnected = true;
-    $dbStatus = 'Terhubung ke MySQL';
+    $dbStatus = 'Terhubung (' . strtoupper(config('database.default')) . ')';
     try {
         \Illuminate\Support\Facades\DB::connection()->getPdo();
     } catch (\Throwable $e) {
